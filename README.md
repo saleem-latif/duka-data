@@ -35,6 +35,21 @@ python3 download.py --incremental
 See **[USAGE.md](USAGE.md)** for the full CLI, CSV schema, bi5 format, and
 monitoring details.
 
+## Dashboard (optional)
+
+Prefer buttons over flags? Launch the local control panel:
+
+```bash
+python3 dashboard.py            # opens http://127.0.0.1:8765
+```
+
+A single stdlib `http.server` (no Flask/Node/build step) that lets you pick
+symbols + date range, start a detached download, and watch live progress
+(progress bar, ETA, ticks, retries) plus a tailing log — all read from the same
+`.download_status.json` the CLI writes. It refuses to start a second concurrent
+download and **binds to `127.0.0.1` only** (it can launch processes, so it is
+never network-exposed).
+
 ## Research universe
 
 | Group | Symbols (Dukascopy names) |
@@ -55,6 +70,7 @@ monitoring details.
 | File | Purpose |
 |------|---------|
 | `download.py` | Tick downloader + OHLC compiler (the core) |
+| `dashboard.py` | Local web UI to trigger downloads and watch live progress |
 | `check_integrity.py` | Validate compiled CSVs (gaps, ordering, bad bars) |
 | `make_manifest.py` | Write `DATA_MANIFEST.md` — local inventory of what's on disk |
 | `queue_extra_downloads.sh` | Wait for an in-flight run to finish, then fetch more symbols |
