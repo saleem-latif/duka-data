@@ -41,7 +41,10 @@ monitoring details.
 
 ## Dashboard (optional)
 
-Prefer buttons over flags? Launch the local control panel:
+Prefer buttons over flags? Launch the local control panel — pick symbols and a
+date range, fire off a detached download, and watch live progress:
+
+![duka-data dashboard: symbol picker, live progress, and tailing log](docs/dashboard.png)
 
 ```bash
 python3 dashboard.py            # opens http://127.0.0.1:8765
