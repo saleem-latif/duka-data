@@ -6,6 +6,10 @@ bars (with bid/ask spread) for FX pairs, metals, energy, and indices.
 
 Pure Python + pandas/numpy — no broker SDK or trading-platform dependency.
 
+> **Keywords:** Dukascopy tick data downloader · free forex historical data ·
+> M5/H1/H4/D1 OHLC + spread bars · backtesting · algorithmic trading ·
+> quantitative finance · FX, metals, energy & indices · Python · no API key.
+
 > **The data is not in this repo.** Compiled CSVs run to ~1.3 GB and exceed
 > GitHub's 100 MiB/file limit, so `compiled/`, `raw/`, and `logs/` are
 > gitignored. The data is fully reproducible from `download.py` — clone, install,
