@@ -71,3 +71,14 @@ python3 make_manifest.py   # regenerates DATA_MANIFEST.md (gitignored)
 Dukascopy public datafeed (`datafeed.dukascopy.com`). This repo ships only the
 downloader; redistributing Dukascopy's data is subject to their terms, which is
 the other reason the compiled output stays out of version control.
+
+## License & disclaimer
+
+Released under the [MIT License](LICENSE) — provided **as-is, without warranty
+of any kind**.
+
+This is personal research tooling. It is **not** financial advice and carries
+no guarantee of data accuracy or fitness for trading. You are responsible for
+complying with [Dukascopy's terms of use](https://www.dukascopy.com/) when
+accessing their datafeed; this project downloads data for personal/research use
+only and does **not** redistribute it.
