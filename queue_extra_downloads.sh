@@ -9,7 +9,7 @@
 # Dukascopy's rate limit. Launched detached via nohup; logs to queued_extra.log.
 set -u
 
-DIR="/Users/saleem-latif/forex/duka-data"
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 LOG="$DIR/logs/queued_extra.log"
 WAIT_PID="${1:-23679}"          # PID of the running download to wait on
 

@@ -4,7 +4,7 @@
 # This avoids the OOM that killed the full 20y single-pass download.
 
 set -e
-cd /Users/saleem-latif/forex/duka-data
+cd "$(dirname "${BASH_SOURCE[0]}")"
 CHUNKS_DIR=compiled/chunks
 mkdir -p "$CHUNKS_DIR"
 
