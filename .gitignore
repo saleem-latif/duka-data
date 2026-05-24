@@ -1,0 +1,23 @@
+# --- Data (regenerate with download.py; never committed) ---
+compiled/
+raw/
+logs/
+*.csv
+
+# --- Local state / generated metadata ---
+# .download_status.json : live progress of an in-flight download
+# .download_meta.json   : per-symbol last-date manifest (for --incremental)
+# DATA_MANIFEST.md       : local data inventory (regenerate: python3 make_manifest.py)
+.download_status.json
+.download_meta.json
+DATA_MANIFEST.md
+
+# --- Python / tooling cruft ---
+__pycache__/
+*.pyc
+
+# --- Editor / OS ---
+.DS_Store
+.idea/
+.claude/
+.antigravitycli/
