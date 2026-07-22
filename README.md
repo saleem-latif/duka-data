@@ -72,6 +72,9 @@ never network-exposed).
 > CFDs — expect session gaps and shorter history than FX (energy/index feeds
 > generally don't reach back to 2006), so don't merge their bars naively with FX.
 
+Need a symbol that isn't listed here? Please open a Jira issue requesting it and
+it'll be considered for a future release.
+
 ## Tooling
 
 | File | Purpose |
